@@ -8,10 +8,6 @@ import org.openqa.selenium.By;
 public class ClearTest extends BaseTest {
     private static final Logger logger = LogManager.getLogger(ClearTest.class);
 
-    public static void main(String[] args) {
-        logger.error("err");
-    }
-
     ///session/{session id}/element/{element id}/clear
     @Test
     public void clear() {
