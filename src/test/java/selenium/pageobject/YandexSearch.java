@@ -7,7 +7,6 @@ import org.junit.Test;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import selenium.interaction.BaseTest;
-
 import static java.util.concurrent.TimeUnit.SECONDS;
 
 public class YandexSearch extends BaseTest {
