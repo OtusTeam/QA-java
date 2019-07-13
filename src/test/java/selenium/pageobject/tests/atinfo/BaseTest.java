@@ -1,8 +1,6 @@
-package selenium.pageobject.tests;
+package selenium.pageobject.tests.atinfo;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
-import org.apache.logging.log4j.LogManager;
-import org.apache.logging.log4j.Logger;
 import org.junit.After;
 import org.junit.Before;
 import org.junit.BeforeClass;
@@ -25,9 +23,7 @@ public abstract class BaseTest {
     }
 
     @BeforeClass
-    public static void setUpClass() {
-        WebDriverManager.chromedriver().setup();
-    }
+    public static void setUpClass() { WebDriverManager.chromedriver().setup(); }
 
     @Before
     public void setUp() {
