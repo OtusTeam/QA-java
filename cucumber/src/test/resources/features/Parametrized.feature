@@ -5,7 +5,6 @@ Feature: I can run test-case many times
     And I write to console "ABC"
     And I write to console "123"
 
-
   Scenario Outline: The same test in one step
     Given I write to console "<message>"
 

@@ -1,9 +1,8 @@
-package ru.com.otus.steps;
+package ru.com.otus.step;
 
 import cucumber.api.java.en.*;
 import io.cucumber.datatable.DataTable;
 import ru.com.otus.model.Tech;
-import ru.com.otus.model.User;
 
 import java.util.List;
 
