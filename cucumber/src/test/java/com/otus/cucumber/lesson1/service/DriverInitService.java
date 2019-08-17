@@ -1,4 +1,4 @@
-package com.otus.cucumber.service;
+package com.otus.cucumber.lesson1.service;
 
 import io.github.bonigarcia.wdm.WebDriverManager;
 import org.apache.logging.log4j.LogManager;
@@ -11,8 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.concurrent.TimeUnit;
 
 @Service
-public class DriverService {
-    private static final Logger logger = LogManager.getLogger(DriverService.class);
+public class DriverInitService {
+    private static final Logger logger = LogManager.getLogger(DriverInitService.class);
 
     private final WebDriver driver = new ChromeDriver();
 

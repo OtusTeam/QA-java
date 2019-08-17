@@ -1,4 +1,4 @@
-package com.otus.cucumber.page;
+package com.otus.cucumber.lesson1.page;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
@@ -10,19 +10,19 @@ import org.springframework.stereotype.Component;
 import javax.annotation.PostConstruct;
 
 @Component
-public class TopicPage {
+public class LoginBlock {
     @Autowired
     private WebDriver driver;
 
-    @FindBy(css = "#topic-title a.fancy-title")
-    private WebElement topicTitle;
+    @FindBy(css = ".modal-header")
+    private WebElement header;
 
     @PostConstruct
     private void init() {
         PageFactory.initElements(driver, this);
     }
 
-    public String getTopicTitle() {
-        return topicTitle.getText();
+    public WebElement getHeader() {
+        return header;
     }
 }

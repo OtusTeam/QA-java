@@ -1,6 +1,6 @@
-package com.otus.cucumber.step;
+package com.otus.cucumber.lesson1.step;
 
-import com.otus.cucumber.model.Tech;
+import com.otus.cucumber.lesson1.model.Tech;
 import cucumber.api.java.en.*;
 import io.cucumber.datatable.DataTable;
 

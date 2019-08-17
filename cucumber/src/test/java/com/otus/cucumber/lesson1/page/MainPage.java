@@ -1,4 +1,4 @@
-package com.otus.cucumber.page;
+package com.otus.cucumber.lesson1.page;
 
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;

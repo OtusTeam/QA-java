@@ -1,4 +1,4 @@
-package com.otus.cucumber.step;
+package com.otus.cucumber.lesson1.step;
 
 import cucumber.api.java.en.And;
 

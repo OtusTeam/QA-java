@@ -1,6 +1,6 @@
-package com.otus.cucumber.config;
+package com.otus.cucumber.lesson1.config;
 
-import com.otus.cucumber.model.Tech;
+import com.otus.cucumber.lesson1.model.Tech;
 import cucumber.api.TypeRegistry;
 import cucumber.api.TypeRegistryConfigurer;
 import io.cucumber.datatable.DataTableType;

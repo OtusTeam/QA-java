@@ -1,11 +1,11 @@
-package com.otus.cucumber.step;
+package com.otus.cucumber.lesson1.step;
 
 import cucumber.api.Scenario;
 import cucumber.api.java.AfterStep;
 import cucumber.api.java.BeforeStep;
 import cucumber.api.java.en.Then;
 import org.springframework.beans.factory.annotation.Autowired;
-import com.otus.cucumber.page.TopicPage;
+import com.otus.cucumber.lesson1.page.TopicPage;
 
 import static org.hamcrest.CoreMatchers.equalTo;
 import static org.hamcrest.MatcherAssert.assertThat;

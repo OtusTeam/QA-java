@@ -1,9 +1,9 @@
-package com.otus.cucumber.model;
+package com.otus.cucumber.lesson1.model;
 
 public class User {
-    private int id;
-    private String login;
-    private Tech tech;
+    private final int id;
+    private final String login;
+    private final Tech tech;
 
     public User(int id, String login, int techId, String techName) {
         this.id = id;

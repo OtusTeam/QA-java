@@ -1,6 +1,6 @@
-package com.otus.cucumber.config;
+package com.otus.cucumber.lesson1.config;
 
-import com.otus.cucumber.service.DriverService;
+import com.otus.cucumber.lesson1.service.DriverInitService;
 import org.openqa.selenium.WebDriver;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.context.annotation.Bean;
@@ -10,12 +10,12 @@ import org.springframework.context.annotation.PropertySource;
 import org.springframework.test.annotation.DirtiesContext;
 
 @Configuration
-@ComponentScan("com.otus.cucumber")
+@ComponentScan("com.otus.cucumber.lesson1")
 @PropertySource("classpath:app.properties")
 @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
 public class Config {
     @Autowired
-    private DriverService service;
+    private DriverInitService service;
 
     @Bean
     public WebDriver getDriver() {
