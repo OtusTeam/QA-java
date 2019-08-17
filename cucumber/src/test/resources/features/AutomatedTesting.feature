@@ -9,6 +9,3 @@ Feature: I can open topic page
     Given ATInfo is open
     * I click "Войти"
     Then Login modal is visible
-
-#
-#
