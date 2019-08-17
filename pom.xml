@@ -11,6 +11,7 @@
     <modules>
         <module>selenium</module>
         <module>cucumber</module>
+        <module>api</module>
     </modules>
 
     <dependencies>
@@ -28,6 +29,18 @@
             <groupId>junit</groupId>
             <artifactId>junit</artifactId>
             <version>4.12</version>
+            <scope>test</scope>
+            <exclusions>
+                <exclusion>
+                    <groupId>org.hamcrest</groupId>
+                    <artifactId>hamcrest-core</artifactId>
+                </exclusion>
+            </exclusions>
+        </dependency>
+        <dependency>
+            <groupId>org.hamcrest</groupId>
+            <artifactId>hamcrest-library</artifactId>
+            <version>2.1</version>
             <scope>test</scope>
         </dependency>
 
