@@ -49,7 +49,8 @@ public class AtInfoTestPO extends BaseTest {
     @Test
     public void iCanOpenGroupsList() {
         mainPage.getMenuButton().click();
-        new WebDriverWait(driver, 10L).until(ExpectedConditions.elementToBeClickable(menuBlock.getGroupsLink()));
+        new WebDriverWait(driver, 10L)
+                .until(ExpectedConditions.elementToBeClickable(menuBlock.getGroupsLink()));
         menuBlock.getGroupsLink().click();
         assertThat(driver.getCurrentUrl(), endsWith("/groups"));
     }

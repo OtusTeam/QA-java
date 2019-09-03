@@ -59,7 +59,6 @@
                         <include>**/*.java</include>
                     </includes>
                     <parallel>all</parallel>
-                    <threadCount>100</threadCount>
                     <rerunFailingTestsCount>1</rerunFailingTestsCount>
                     <forkCount>10</forkCount>
                     <parallel>methods</parallel>
