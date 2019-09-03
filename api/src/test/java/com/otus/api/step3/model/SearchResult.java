@@ -11,7 +11,6 @@ import java.util.Map;
 
 public class SearchResult implements Serializable {
 
-    private int pageSize;
     private String next;
     private String previous;
     private int page;
@@ -20,13 +19,7 @@ public class SearchResult implements Serializable {
     private Map<String, Object> additionalProperties = new HashMap<String, Object>();
     private final static long serialVersionUID = -2461159705164905700L;
 
-    public int getPageSize() {
-        return pageSize;
-    }
 
-    public void setPageSize(int pageSize) {
-        this.pageSize = pageSize;
-    }
 
     public String getNext() {
         return next;
@@ -78,12 +71,12 @@ public class SearchResult implements Serializable {
 
     @Override
     public String toString() {
-        return new ToStringBuilder(this).append("pageSize", pageSize).append("next", next).append("previous", previous).append("page", page).append("count", count).append("summaries", summaries).append("additionalProperties", additionalProperties).toString();
+        return new ToStringBuilder(this).append("next", next).append("previous", previous).append("page", page).append("count", count).append("summaries", summaries).append("additionalProperties", additionalProperties).toString();
     }
 
     @Override
     public int hashCode() {
-        return new HashCodeBuilder().append(count).append(previous).append(page).append(additionalProperties).append(next).append(pageSize).append(summaries).toHashCode();
+        return new HashCodeBuilder().append(count).append(previous).append(page).append(additionalProperties).append(next).append(summaries).toHashCode();
     }
 
     @Override
@@ -95,7 +88,7 @@ public class SearchResult implements Serializable {
             return false;
         }
         SearchResult rhs = ((SearchResult) other);
-        return new EqualsBuilder().append(count, rhs.count).append(previous, rhs.previous).append(page, rhs.page).append(additionalProperties, rhs.additionalProperties).append(next, rhs.next).append(pageSize, rhs.pageSize).append(summaries, rhs.summaries).isEquals();
+        return new EqualsBuilder().append(count, rhs.count).append(previous, rhs.previous).append(page, rhs.page).append(additionalProperties, rhs.additionalProperties).append(next, rhs.next).append(summaries, rhs.summaries).isEquals();
     }
 
 }

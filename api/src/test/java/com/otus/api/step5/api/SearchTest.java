@@ -45,7 +45,7 @@ public class SearchTest {
 
     @Test
     public void asAuthorizedUserICanSearchImages() {
-        SearchResult result = search.searchImage("log", 25, "image");
+        SearchResult result = search.searchImage("log", "image");
         assertThat(result.getNext(), emptyString());
         assertThat(result.getCount(), is(8));
         assertThat(result.getSummaries().size(), is(8));
@@ -53,7 +53,7 @@ public class SearchTest {
 
     @Test
     public void asAuthorizedUserICanSearchPlugins() {
-        SearchResult result = search.searchPlugin("log", 25, "plugin", "logging");
+        SearchResult result = search.searchPlugin("log", "plugin", "logging");
         assertThat(result.getNext(), emptyString());
         assertThat(result.getCount(), is(3));
         assertThat(result.getSummaries().size(), is(3));

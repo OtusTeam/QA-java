@@ -21,14 +21,13 @@ public class SearchService {
         this.cookies = cookies;
     }
 
-    public SearchResult searchImage(String searchTerm, int pageSize, String type) {
+    public SearchResult searchImage(String searchTerm, String type) {
         RestAssured.baseURI = hubUri;
 
         return given().log().everything()
                 .cookies(cookies)
                 .contentType(ContentType.JSON)
                 .basePath("products")
-                .queryParam("page_size", pageSize)
                 .queryParam("q", searchTerm)
                 .queryParam("type", type)
                 .when().get("search")
@@ -36,13 +35,12 @@ public class SearchService {
                 .extract().as(SearchResult.class);
     }
 
-    public SearchResult searchPlugin(String searchTerm, int pageSize, String type, String category) {
+    public SearchResult searchPlugin(String searchTerm , String type, String category) {
         RestAssured.baseURI = hubUri;
         return given().log().everything()
                 .cookies(cookies)
                 .basePath("products")
                 .contentType(ContentType.JSON)
-                .queryParam("page_size", pageSize)
                 .queryParam("category", category)
                 .queryParam("type", type)
                 .queryParam("q", searchTerm)

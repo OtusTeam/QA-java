@@ -54,22 +54,22 @@
                         <version>3.0.0-M3</version>
                     </dependency>
                 </dependencies>
-                <configuration>
-                    <includes>
-                        <include>**/*.java</include>
-                    </includes>
-                    <parallel>all</parallel>
-                    <rerunFailingTestsCount>1</rerunFailingTestsCount>
-                    <forkCount>10</forkCount>
-                    <parallel>methods</parallel>
-                    <threadCountMethods>4</threadCountMethods>
-                    <reuseForks>true</reuseForks>
-                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>
-                    <systemPropertyVariables>
-                        <fNumber>${surefire.forkNumber}</fNumber>
-                    </systemPropertyVariables>
-                    <workingDirectory>FORK_DIRECTORY_${surefire.forkNumber}</workingDirectory>
-                </configuration>
+<!--                <configuration>-->
+<!--                    <includes>-->
+<!--                        <include>**/*.java</include>-->
+<!--                    </includes>-->
+<!--                    <parallel>all</parallel>-->
+<!--                    <rerunFailingTestsCount>1</rerunFailingTestsCount>-->
+<!--                    <forkCount>10</forkCount>-->
+<!--                    <parallel>methods</parallel>-->
+<!--                    <threadCountMethods>4</threadCountMethods>-->
+<!--                    <reuseForks>true</reuseForks>-->
+<!--                    <argLine>-Xmx1024m -XX:MaxPermSize=256m</argLine>-->
+<!--                    <systemPropertyVariables>-->
+<!--                        <fNumber>${surefire.forkNumber}</fNumber>-->
+<!--                    </systemPropertyVariables>-->
+<!--                    <workingDirectory>FORK_DIRECTORY_${surefire.forkNumber}</workingDirectory>-->
+<!--                </configuration>-->
             </plugin>
         </plugins>
     </build>
