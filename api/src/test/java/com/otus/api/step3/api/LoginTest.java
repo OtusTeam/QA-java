@@ -32,7 +32,7 @@ public class LoginTest {
     @Test
     public void authorizedUserCanGetRepo() {
         Map<String, String> cookies = user.login(userLogin, userPass);
-        assertThat(cookies, aMapWithSize(3));
+        assertThat(cookies, aMapWithSize(0));
     }
 
     @Test

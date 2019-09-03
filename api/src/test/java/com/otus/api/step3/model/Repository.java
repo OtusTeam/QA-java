@@ -1,5 +1,6 @@
 package com.otus.api.step3.model;
 
+import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 import org.apache.commons.lang3.builder.EqualsBuilder;
 import org.apache.commons.lang3.builder.HashCodeBuilder;
 import org.apache.commons.lang3.builder.ToStringBuilder;
@@ -8,12 +9,13 @@ import java.io.Serializable;
 import java.util.HashMap;
 import java.util.Map;
 
+@JsonIgnoreProperties(ignoreUnknown = true)
 public class Repository implements Serializable {
 
     private String user;
     private String name;
     private String namespace;
-    private Object repositoryType;
+    private String repositoryType;
     private int status;
     private String description;
     private boolean isPrivate;
@@ -50,11 +52,11 @@ public class Repository implements Serializable {
         this.namespace = namespace;
     }
 
-    public Object getRepositoryType() {
+    public String getRepositoryType() {
         return repositoryType;
     }
 
-    public void setRepositoryType(Object repositoryType) {
+    public void setRepositoryType(String repositoryType) {
         this.repositoryType = repositoryType;
     }
 

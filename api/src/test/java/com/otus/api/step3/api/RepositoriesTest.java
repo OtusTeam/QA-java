@@ -42,7 +42,7 @@ public class RepositoriesTest {
     @Test
     public void asAuthorizedUserICanGetRepositories() {
         Repositories reps = repo.getRepositories("last_updated", 1, userName);
-        assertThat(reps.getCount(), is(9));
+        assertThat(reps.getCount(), is(47));
         assertThat(reps.getResults().size(), is(9));
     }
 
