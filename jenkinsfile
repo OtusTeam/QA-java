@@ -1,0 +1,13 @@
+node{
+    stage('Megarun'){
+        parallel(
+                runJob1: {
+                    build job: 'job1'
+                },
+                
+                runJob2: {
+                    build job: 'job2', parameters: [booleanParam(name: 'isTrue', value: true), string(name: 'name', value: 'test')]
+                }
+        )
+    }
+}
