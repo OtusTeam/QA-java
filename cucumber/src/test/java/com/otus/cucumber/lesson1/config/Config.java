@@ -11,7 +11,7 @@ import org.springframework.test.annotation.DirtiesContext;
 
 @Configuration
 @ComponentScan("com.otus.cucumber.lesson1")
-@PropertySource("classpath:app.properties")
+@PropertySource("classpath:config/lesson1/app.properties")
 @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
 public class Config {
     @Autowired

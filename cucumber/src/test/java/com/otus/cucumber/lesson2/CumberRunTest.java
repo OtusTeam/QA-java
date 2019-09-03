@@ -9,7 +9,7 @@ import org.junit.runner.RunWith;
 @CucumberOptions(
         plugin = {"html:target/cucumber/html", "json:target/cucumber/json/cucumber.json", "pretty"},
         monochrome = true,
-        features = "src/test/resources/feature/",
+        features = "src/test/resources/features/lesson2/Hub.feature",
         glue = {"com.otus.cucumber.lesson2"}
 )
 public class CumberRunTest {

@@ -8,7 +8,7 @@ import org.springframework.test.annotation.DirtiesContext;
 
 @Configuration
 @ComponentScan("com.otus.cucumber.lesson2")
-@PropertySource("classpath:config/lesson2/habr-web.properties")
+@PropertySource("classpath:config/lesson2/config/habr-web.properties")
 @Profile("web")
 @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
 public class BeanConfigWeb {

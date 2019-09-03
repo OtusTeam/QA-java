@@ -11,7 +11,7 @@ import org.springframework.test.annotation.DirtiesContext;
 
 @Configuration
 @ComponentScan("com.otus.cucumber.lesson2")
-@PropertySource("classpath:config/lesson2/habr-mobile.properties")
+@PropertySource("classpath:config/lesson2/config/habr-mobile.properties")
 @Profile("mobile")
 @DirtiesContext(methodMode = DirtiesContext.MethodMode.AFTER_METHOD)
 public class BeanConfigMobile {
