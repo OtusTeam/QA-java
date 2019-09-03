@@ -14,7 +14,7 @@ import org.junit.runner.RunWith;
 )
 public class CumberRunTest {
     @AfterClass
-    public void afterClass(){
+    public static void afterClass(){
 
     }
 }
