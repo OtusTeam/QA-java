@@ -44,7 +44,7 @@ public class ExplicitlyWait extends BaseTest {
         ExpectedConditions.invisibilityOfElementLocated(locator);
         ExpectedConditions.elementToBeClickable(element);
         ExpectedConditions.elementSelectionStateToBe(element, true);
-        ExpectedConditions.alertIsPresent().andThen(this::acceptAlert);
+        ExpectedConditions.alertIsPresent();
 
     }
 
